@@ -3,8 +3,22 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-3.1#the-select-tag-helper">Select Tag Helper in ASP.NET Core</a>.</p>
-    <select asp-for="Language" asp-items="Model.Languages"></select>
-</div>
+    <div class="text-center">
+        <h1 class="display-4">Welcome</h1>
+        <p>Learn about <a href="https://docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-3.1#the-select-tag-helper">Select Tag Helper in ASP.NET Core</a>.</p>
+        <br />
+        <h3>Default List</h3>
+        <select asp-for="SelLanguage1" asp-items="Model.LanguagesEx1"></select>
+        <br />
+        <br />
+        <h3>Set selected option</h3>
+        <select asp-for="SelLanguage2" asp-items="Model.LanguagesEx2"></select>
+        <br />
+        <br />
+        <h3>Group option</h3>
+        <select asp-for="SelLanguage2" asp-items="Model.LanguagesEx3"></select>
+        <br />
+        <br />
+        <h3>Disable Option or Group options</h3>
+        <select asp-for="SelLanguage1" asp-items="Model.LanguagesEx4"></select>
+    </div>

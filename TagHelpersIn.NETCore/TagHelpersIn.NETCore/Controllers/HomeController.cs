@@ -21,6 +21,8 @@ namespace TagHelpersIn.NETCore.Controllers
         public IActionResult Index()
         {
             var model = new LanguageViewModel();
+            model.SelLanguage2 = "TS";
+            model.SelLanguage3 = "CS";
             return View(model);
         }
 
