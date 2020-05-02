@@ -20,8 +20,7 @@ namespace TagHelpersIn.NETCore.Controllers
 
         public IActionResult Index()
         {
-            var model = new CountryViewModel();
-            model.Country = "CA";
+            var model = new LanguageViewModel();
             return View(model);
         }
 
